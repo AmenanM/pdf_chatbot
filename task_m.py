@@ -14,7 +14,6 @@ st.subheader("Pdf view and integrated chatbot for summary and questions answer i
 
 
 # Load API Key from Environment Variable
-load_dotenv()
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 # Ensure API Key is provided
