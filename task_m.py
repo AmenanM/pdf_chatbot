@@ -18,7 +18,7 @@ st.subheader("Pdf view and integrated chatbot for summary and questions answer i
 
 
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPEN_API_KEY")
 # Ensure API Key is provided
 if not openai_api_key:
     st.error("⚠️ OpenAI API key is missing! Please set it in a `.env` file.")
