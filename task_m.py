@@ -13,10 +13,7 @@ st.title("AI powered financial report analysis")
 st.subheader("Pdf view and integrated chatbot for summary and questions answer interactions")
 
 
-# Load API Key from Environment Variable
-dotenv_path = "/etc/secrets/.env"
-if os.path.exists(dotenv_path):
-    load_dotenv(dotenv_path)
+
 openai_api_key = os.getenv("OPENAI_API_KEY")
 # Ensure API Key is provided
 if not openai_api_key:
