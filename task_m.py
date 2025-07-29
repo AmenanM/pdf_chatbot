@@ -1,3 +1,5 @@
+
+
 import os
 import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
@@ -6,6 +8,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import pdfplumber
 import base64
+st.write("DEBUG - Render env var:", os.environ.get("OPENAI_API_KEY"))
+st.write("DEBUG - getenv:", os.getenv("OPENAI_API_KEY"))
 
 # **Set up Streamlit Page Configuration**
 st.set_page_config(page_title="AI Financial Report Chatbot", layout="wide")
