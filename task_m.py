@@ -8,8 +8,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import pdfplumber
 import base64
-st.write("DEBUG - Render env var:", os.environ.get("OPENAI_API_KEY"))
-st.write("DEBUG - getenv:", os.getenv("OPENAI_API_KEY"))
+
 
 # **Set up Streamlit Page Configuration**
 st.set_page_config(page_title="AI Financial Report Chatbot", layout="wide")
@@ -18,7 +17,7 @@ st.subheader("Pdf view and integrated chatbot for summary and questions answer i
 
 
 
-openai_api_key = os.getenv("OPEN_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 # Ensure API Key is provided
 if not openai_api_key:
     st.error("⚠️ OpenAI API key is missing! Please set it in a `.env` file.")
